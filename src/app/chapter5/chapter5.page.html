@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Gardens
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="welcome-card">
+    <img src="https://cdn.architecturendesign.net/wp-content/uploads/2015/06/AD-Backyard-Ponds-Water-Gardens-20.jpg" />
+    <ion-card-header>
+      <ion-card-subtitle>Chapter 5</ion-card-subtitle>
+      <ion-card-title>Gardens - Water</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>"Whoever believes in me, as the Scripture has said, 'Out of his heart will flow rivers of living water.'" John 7:38 ESV
+          "You, God, are my God, earnestly I seek you; I thirst for you, my whole being longs for you, in a dry and parched land 
+          where there is no water." Psalms 63:1</p>
+      <ion-item>
+        <ion-button slot="start" [routerDirection]="'back'" [routerLink]="['/chapter 4']">
+          <ion-icon slot="start" name="arrow-back-outline" src="assets\arrow-back-outline.svg"></ion-icon>
+          Back
+        </ion-button>
+        <ion-button slot="end" [routerDirection]="'forward'" [routerLink]="['/cover']">
+          Cover
+          <ion-icon slot="end" name="arrow-forward-outline" src="assets\arrow-forward-outline.svg"></ion-icon>
+        </ion-button>
+      </ion-item>
+
+    </ion-card-content>
+    <ion-footer>
+      <div class="bar bar-footer ion-text-center">
+        <h3 class="title">5</h3>
+      </div>
+    </ion-footer>

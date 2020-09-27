@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Gardens
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="welcome-card">
+    <img src="https://jennygorms.files.wordpress.com/2013/04/garden-gate.jpg"/>
+    <ion-card-header>
+      <ion-card-subtitle>Chapter 3</ion-card-subtitle>
+      <ion-card-title>Gardens - Gates</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Blessed is the man who listens to me, watching daily at my gates. Prov 8:34  If you long for a mind at rest and a heart that cannot harden...go find a gate that opens wide into a secret garden!</p>
+      <ion-item>
+        <ion-button slot="start" [routerDirection]="'back'" [routerLink]="['/chapter 2']">
+          <ion-icon slot="start" name="arrow-back-outline" src="assets\arrow-back-outline.svg"></ion-icon>
+          Back
+        </ion-button>
+
+        <ion-button slot="end" [routerDirection]="'forward'" [routerLink]="['/chapter 4']">
+          Next
+          <ion-icon slot="end" name="arrow-forward-outline" src="assets\arrow-forward-outline.svg"></ion-icon>
+        </ion-button>
+      </ion-item>
+    </ion-card-content>
+    <ion-footer>
+      <div class="bar bar-footer ion-text-center">
+        <h3 class="title">3</h3>
+      </div>
+    </ion-footer>

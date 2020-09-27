@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Gardens</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+  <ion-content>
+    <ion-card class="welcome-card">
+      <h3 class="ion-text-center">Table Of Contents</h3>
+    </ion-card>
+    <ion-list *ngFor="let chapter of chapters" [routerDirection]="'forward'" [routerLink]="[chapter.url]">
+      <ion-item>
+        <ion-icon [name]="chapter.icon" slot="start"></ion-icon>
+        {{chapter.title}}
+      </ion-item>
+    </ion-list>
+    <ion-item>
+      <ion-button slot="start" [routerDirection]="'back'" [routerLink]="['/cover']">
+        <ion-icon slot="start" name="arrow-back-outline" src="assets\arrow-back-outline.svg"></ion-icon>
+        Cover
+      </ion-button>
+
+      <ion-button slot="end" [routerDirection]="'forward'" [routerLink]="['/chapter 1']">
+        Next
+        <ion-icon slot="end" name="arrow-forward-outline" src="assets\arrow-forward-outline.svg"></ion-icon>
+      </ion-button>
+    </ion-item>
+  </ion-content>

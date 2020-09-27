@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Gardens
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-card class="welcome-card">
+    <img src="https://th.bing.com/th/id/OIP.NQcKznsuTqGrDGFEN6qUXAHaE9?w=238&h=180&c=7&o=5&pid=1.7"/> 
+    <ion-card-header>
+      <ion-card-subtitle>Chapter 1 </ion-card-subtitle>
+      <ion-card-title>Gardens - Plants</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Don't judge each day by the harvest you reap but by the seeds that you plant. Gardening adds years to your life and life to your years.</p>
+          <ion-item>
+        <ion-button slot="start" [routerDirection]="'back'" [routerLink]="['/table of contents']">
+          <ion-icon slot="start" name="arrow-back-outline" src="assets\arrow-back-outline.svg"></ion-icon>
+          Back
+        </ion-button>
+
+        <ion-button slot="end" [routerDirection]="'forward'" [routerLink]="['/chapter 2']">
+          Next
+          <ion-icon slot="end" name="arrow-forward-outline" src="assets\arrow-forward-outline.svg"></ion-icon>
+        </ion-button>
+      </ion-item>
+    </ion-card-content>
+    <ion-footer>
+      <div class="bar bar-footer ion-text-center">
+        <h3 class="title">1</h3>
+      </div>
+    </ion-footer>

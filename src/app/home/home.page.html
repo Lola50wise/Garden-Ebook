@@ -1,20 +1,30 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
     <ion-title>
-      Blank
+      Gardens
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <ion-card class="welcome-card" [routerDirection]="'root'" [routerLink]="['/table of contents']">
+    <img src="https://images5.alphacoders.com/427/427178.jpg"/>
+    <ion-card-header>
+      <ion-card-subtitle>A Book about Gardens</ion-card-subtitle>
+      <ion-card-title>Gardens</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>"Gardening is the art that uses flowers and plants as paint and the soil and sky as canvas" - Elizabeth Murray  
+        "If you have a garden and a library, you have everything you need." - Marcus Tullius Cicero  "To plant a garden is to believe in tomorrow." - Audrey Hepburn</p>
+      <ion-item>
+       
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
-</ion-content>
+        <ion-button slot="end" [routerDirection]="'forward'" [routerLink]="['/table of contents']">
+          Next
+          <ion-icon slot="end" name="arrow-forward-outline" src="assets\arrow-forward-outline.svg"></ion-icon>
+        </ion-button>
+      </ion-item>
+    </ion-card-content>

@@ -1,5 +1,7 @@
 {
   "name": "MyGardenEbook",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
